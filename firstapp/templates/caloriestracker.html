@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calories_tracker</title>
+        <style>
+            .toptext{
+                text-align: center;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                background-color: red;
+                margin-top: -0.6%;
+                margin-left: -1%;
+                margin-right: -1%;
+                margin-bottom: 2%;
+                padding-bottom: 1.5%;
+                padding-top: 0.5%;
+                color: white;
+            }
+            .breakfast{
+                border-radius: 3px;   
+                margin-left: 8%;
+                margin-right: 8%;
+                box-shadow: 5px 5px 15px 15px rgb(222, 219, 219);
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+            .a{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: lighter;
+                margin-top: 0%;
+                padding-left: 3.4%;
+            }
+            .a1,.a2{
+                display: inline-block;
+            }
+            .a1{
+                font-size: medium;
+                font-weight: lighter;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 3.5%;
+            }
+            .a2{
+                font-size: medium;
+                font-weight: lighter;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 38.6%;
+            }
+            .breakfastbox1{
+                border-color:black;
+                box-shadow: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                padding-right: 11.8%;
+                margin-top: 1%;
+                margin-bottom: 2%;
+                margin-left: 3.5%;
+            }
+            .breakfastbox2{
+                margin-left: 17.3%;
+                border-color:black;
+                box-shadow: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                padding-right: 10%;
+                margin-top: 1%;
+                margin-bottom: 2%;
+            }
+            .b{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: lighter;
+                padding-left: 3.4%;
+            }
+            .b1,.b2{
+                display: inline-block;
+            }
+            .b1{
+                font-size: medium;
+                font-weight: lighter;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 3.5%;
+            }
+            .b2{
+                font-size: medium;
+                font-weight: lighter;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 38.6%;
+            }
+            .lunchbox1{
+                border-color:black;
+                box-shadow: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                padding-right: 10%;
+                margin-top: 1%;
+                margin-bottom: 2%;
+                margin-left: 3.5%;
+            }
+            .lunchbox2{
+                margin-left: 16.7%;
+                border-color:black;
+                box-shadow: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                padding-right: 10%;
+                margin-top: 1%;
+                margin-bottom: 2%;
+            }
+
+            .c{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: lighter;
+                padding-left: 3.4%;
+            }
+            .c1,.c2{
+                display: inline-block;
+            }
+            .c1{
+                font-size: medium;
+                font-weight: lighter;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 3.5%;
+            }
+            .c2{
+                font-size: medium;
+                font-weight: lighter;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 38.6%;
+            }
+            .dinnerbox1{
+                border-color:black;
+                box-shadow: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                padding-right: 14.2%;
+                margin-top: 1%;
+                margin-bottom: 2%;
+                margin-left: 3.5%;
+            }
+            .dinnerbox2{
+                margin-left: 16.3%;
+                border-color:black;
+                box-shadow: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                outline: none;
+                padding-right: 10%;
+                margin-top: 1%;
+                margin-bottom: 2%;
+            }
+            .back-button {
+                display: inline;
+                padding: 10px 20px;
+                background-color: #007bff; 
+                color: #fff;
+                text-decoration: none; 
+                border-radius: 5px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 16px;
+                margin-left: 84%;
+                }
+
+            .back-button:hover {
+                background-color: #0056b3; 
+                }
+            .breakfastbtn,.lunchbtn,.dinnerbtn{
+                cursor: pointer;
+                color: white;
+                padding-left: 3%;
+                padding-right: 3%;
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+                margin-left: 5%;
+                letter-spacing: 2.5px;
+                border-radius: 10px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bolder;
+                background-color: #007bff;
+                border-top-color: #007bff;
+                border-left-color: #007bff;
+                border-right-color: #007bff;
+                border-bottom-color:  #007bff;
+            }
+        </style>
+        </head>
+
+        <body>
+
+        <div class="top">
+            <h1 class="toptext">Calories Tracker</h1>
+        </div>
+
+        <form action="{% url 'addmeals' %}" method="POST">
+        {% csrf_token %}
+        <div class="breakfast">
+            <a href="{% url 'homepage' id=1 %}" class="back-button">Back to Homepage</a>
+            <h1 class="a">Break Fast Meal</h1>
+            <h2 class="a1">Meal</h2>
+            <h3 class="a2">Quantity</h3><br>
+            <select name="breakfast" id=""class="breakfastbox1" required  >
+                <option value=""> Choose Breakfast </option>
+                {% for i in bk %}
+                <option value="{{i.id}}"> {{i.breakfastfood}} </option>
+                {% endfor %}
+            </select>
+            <input type="text" class="breakfastbox2" placeholder="Add quantity" name="quantity" required>
+            <button class="breakfastbtn" type="submit">Add Meal</button>
+            </form>
+            
+            <form action="{% url 'addmeals2' %}" method="POST">
+            {% csrf_token %}
+            <div class="lunch">
+            <h1 class="b">Lunch Meal</h1>
+            <h2 class="b1">Meal</h2>
+            <h3 class="b2">Quantity</h3><br>
+            <select name="lunch" id=" " class="lunchbox1" required >
+                <option value=""> Choose Lunch </option>
+                {% for i in lk %}
+                <option value="{{i.id}}"> {{i.lunchfood}} </option>
+                {% endfor %}
+            </select>
+            <input type="text" class="lunchbox2" placeholder="Add quantity" name="quantity2" required>
+            <button class="lunchbtn" type="submit">Add Meal</button>
+            </form>
+
+            <form action="{% url 'addmeals3' %}" method="POST">
+            {% csrf_token %}
+            <h1 class="c">Dinner Meal</h1>
+            <h2 class="c1">Meal</h2>
+            <h3 class="c2">Quantity</h3><br>
+            <select  id=""class="dinnerbox1" required name="dinner">
+                <option value=""> Choose Dinner </option>
+                {% for i in dk %}
+                <option value="{{i.dinnerfood}}"> {{i.dinnerfood}} </option>
+                {% endfor %}
+            </select>
+            <input type="text" class="dinnerbox2" placeholder="Add quantity" name="quantity3" required>
+            <button class="dinnerbtn" type="submit">Add Meal</button>
+            </form>
+        </div>
+    </body>
+
+</html>

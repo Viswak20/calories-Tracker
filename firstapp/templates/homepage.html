@@ -1,0 +1,331 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home_page</title>
+        <style>
+            .top{
+                height:60vh;
+                margin-bottom: 4%;
+                background-image:  url("{% static '/homepagebackground_icon.jpg' %}");
+                background-repeat: no-repeat;
+            }
+            .arrowbuttom{
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+            }
+            .circletop{
+            text-align: center;
+            width: 176px; 
+            height: 178px;
+            border-radius: 50%;
+            border: 2px solid black; 
+            justify-content: center;
+            align-items: center;
+            margin-left: 42.4%;
+            margin-bottom: 3.8%;
+            border-color: white;
+            }   
+            .a2{
+                margin-top: 1.9%;
+                margin-bottom: 5%;
+                text-align: center;
+                font-family: sans-serif;
+                color: white;
+            }
+            .a3{
+                text-align: center;
+                font-size: 23px;
+                margin-top: 0%;
+                color: white;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            .caloriesicon{
+                margin-top: 10%;
+                padding-left: 4%;
+                margin-bottom: 7%;
+            }
+            .footicon{
+                padding-left: 13.2%;
+            }
+            .moonicon{
+                padding-left: 15%;
+            }
+            .spoonicon{
+                padding-left: 15%;
+            }
+            .waterdropicon{
+                padding-left: 15%;
+            }
+            .locationicon{
+                padding-left: 15%;
+            }
+            .f1,.f2,.f3,.f4,.f5{
+                display: inline;
+            }
+            .f1{
+                padding-left: 13.1%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .f2{
+                padding-left: 15.3%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .f3{
+                padding-left: 16.4%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .f4{
+                padding-left: 16%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .f5{
+                padding-left: 15.4%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+
+
+            .l1,.l2,.l3,.l4,.l5{
+                display: inline;
+            }
+            .l1{
+                padding-left: 13.1%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .l2{
+                padding-left: 14%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .l3{
+                padding-left: 15%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .l4{
+                padding-left: 15.6%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .l5{
+                padding-left: 15.8%;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+            }
+            .bottom1{
+                border: solid;
+                border-radius: 8px;
+                display: block;
+                margin-right: 15%;
+                margin-left: 12%;
+                margin-top: 2%;
+                margin-bottom: 3%;
+            } 
+            .bot1{
+                padding-left: 3%;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+                margin-bottom: 1%;
+            }  
+            .bot2{
+                padding-left: 3%;
+                font-family: sans-serif;
+                font-weight: lighter;
+                font-size: 25px;
+                margin-top: 0%;
+            }
+            .bottom2{
+                border: solid;
+                border-radius: 8px;
+                margin-right: 15%;
+                margin-left: 12%;
+                margin-top: 2%;
+            }
+            .bot3{
+                display: inline-block;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+                padding-left: 3%;
+            }
+            .arrowright {
+            margin-left: 69%;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            cursor: pointer;
+            }
+
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 60px); 
+                gap: 15px;        
+                justify-content: center;
+                align-items: center; 
+                place-items: center;  
+            }
+            .circle{
+                border: solid;
+                border-radius: 50px;
+                height: 80px;
+                width: 77px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                color: white;
+                
+            }
+            .circle{
+                border: solid;
+                border-radius: 50px;
+                height: 80px;
+                width: 77px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                color: white;}
+            .bot{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .circle-text{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .bot10{
+                margin-left: 3%;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bolder;
+                font-size: 23px;
+            }
+                .dropbtn {
+                        background-color:#582c04;
+                        color: white;
+                        padding: 16px;
+                        font-size: 16px;
+                        border: none;
+                        cursor: pointer;
+                        margin-left: 39%;
+                        margin-top: 50%;
+                        
+                        }
+
+                .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  box-shadow:none;
+                  z-index: 1;
+                }
+
+                .dropdown-content a {
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                }
+
+                .dropdown-content a:hover {background-color: #f1f1f1}
+
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+
+                .dropdown:hover .dropbtn {
+                  background-color:brown;
+                }
+        </style>
+    </head>
+
+    <body style="margin: 0%;margin-top: -1.5%;">
+    <div class="top">
+        <div class="dropdown">
+            <button class="dropbtn">Date</button>
+            <div class="dropdown-content">
+            <a href="{% url 'dater2' %}">Yesterday</a>
+            <a href="{% url 'dater' %}">Today</a>
+            <a href="{% url 'dater3' %}">Tomorrow</a>
+            </div>
+          </div>
+
+        <div class="circletop">
+        <img src="{% static '/calories_icon.png' %}" class="caloriesicon" width="38px" height="30px">
+        <h2 class="a2">0</h2>
+        <p class="a3">Cal burnt</p>
+        </div>
+
+        <img src="{% static '/footsteps_icon.png' %}" class="footicon" width="28px" height="33px">
+        <img src="{% static '/moon_icon.png' %}" class="moonicon" width="30px" height="32px">
+        <img src="{% static '/spoon_icon.png' %}" class="spoonicon" width="30px" height="32px">
+        <img src="{% static '/waterdrop_icon.png' %}" class="waterdropicon" width="30px" height="32px">
+        <img src="{% static '/pin_icon.png' %}" class="locationicon" width="30px" height="32px"><br>
+
+        <p class="f1">8500</p>
+        <p class="f2">8</p>
+        <p class="f3">0</p>
+        <p class="f4">1.5</p>
+        <p class="f5">6.50</p><br>
+
+        <p class="l1">steps</p>
+        <p class="l2">hour</p>
+        <p class="l3">cal</p>
+        <p class="l4">Lit</p>
+        <p class="l5">km</p>
+    </div>
+
+    <div class="bottom1">
+        <p class="bot1">Water</p>
+        <p class="bot2">1 Glass ( 250 ml )</p>
+    </div>
+    <div class="bottom2">
+        <h1 class="bot3">Track your Meals</h1>
+        <a href="{% url 'caloriestracker' %}"><p class="arrowright"></p></a>
+        <div class="container">
+            <div class="circle">{{ totalprotein }}g</div>
+            <div class="circle">{{ totalcarbohydrate }}g</div>
+            <div class="circle">{{ totalfat }}g</div>
+
+        <h3 class="bot">Protein</h3>
+        <h3 class="bot">Carbohydrates</h3>
+        <h3 class="bot">Fat</h3>
+        </div>
+        <p class="bot10">{{ totalc }} of {{ cal }} call eaten</p>
+    </div>
+</html>
